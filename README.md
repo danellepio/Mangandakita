@@ -51,6 +51,7 @@ Composer
   <li>Open the shell located in the right part of XAMPP. </li>
   <li>Type, "mysql -u root -p" in the shell. (After this one, I created the database needed using the SQL commands.)</li>
   <li>Return to the VS Code, open the file .env. Change line 14 according to your database name. (e.g, DB_DATABASE = mangandakita)</li>
-  <li> Change the migration files inside the project directory(database->migrations) according to your desired table column values</li>
+  <li>Create the necessary controllers and models for the project using artisan. e.g. php artisan make:controller OrderController, and php artisan make:model Order </li>
+  <li>Change the migration files inside the project directory(database->migrations) according to your desired table column values</li>
   <li>Return to the terminal (make sure to cd to the correct directory of your project). Type, "php artisan migrate" in the command line.</li>
   </ul>
