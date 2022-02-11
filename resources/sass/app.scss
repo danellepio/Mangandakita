@@ -1,0 +1,31 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Animation
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+    }
+
+.zoom:hover {
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+//permanent color sa navbar
+.navbarcolor{
+    background-color: #FCFAEB;
+}
+
+// para mugawas ang scrollbar dayon dili mag lihok ang menu
+html {height: 101%;}
+
+//index background
+.customBG {
+    background-color: #FDFBEE;
+}
