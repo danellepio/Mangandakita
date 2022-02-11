@@ -22,7 +22,7 @@ Composer
 	After installing the composer-setup, run these commands in the terminal. 
   <ul>
   <li>php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" </li>
-  <li>php -r "if (hash_file('sha384', 'composer-setup.php') === 					'906a84df04cea2aa72f40b5f787e49f22d4c2f19492ac310e8cba5b96ac8b64115ac402c8cd292b8a03482574915d1a8') { echo 'Installer 		verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" </li>
+  <li>php -r "if (hash_file('sha384', 'composer-setup.php') === 					'906a84df04cea2aa72f40b5f787e49f22d4c2f19492ac310e8cba5b96ac8b64115ac402c8cd292b8a03482574915d1a8') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" </li>
   <li>php composer-setup.php </li>
   <li>php -r "unlink('composer-setup.php');" </li>
   </ul>
@@ -51,5 +51,6 @@ Composer
   <li>Open the shell located in the right part of XAMPP. </li>
   <li>Type, "mysql -u root -p" in the shell. (After this one, I created the database needed using the SQL commands.)</li>
   <li>Return to the VS Code, open the file .env. Change line 14 according to your database name. (e.g, DB_DATABASE = mangandakita)</li>
+  <li> Change the migration files inside the project directory(database->migrations) according to your desired table column values</li>
   <li>Return to the terminal (make sure to cd to the correct directory of your project). Type, "php artisan migrate" in the command line.</li>
   </ul>
